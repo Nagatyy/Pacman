@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79223466208F3BE50083357D /* zeroVelocity.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79223465208F3BE50083357D /* zeroVelocity.ttf */; };
+		792234682090FA430083357D /* titleImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 792234672090FA430083357D /* titleImage.jpg */; };
+		7922346D209125920083357D /* MenuPacman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7922346B209125920083357D /* MenuPacman.cpp */; };
+		7922347020912B150083357D /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7922346E20912B150083357D /* Animation.cpp */; };
+		792234782092120B0083357D /* pac3.png in Resources */ = {isa = PBXBuildFile; fileRef = 792234772092120B0083357D /* pac3.png */; };
+		7922347B209681810083357D /* wasd.png in Resources */ = {isa = PBXBuildFile; fileRef = 79223479209681810083357D /* wasd.png */; };
+		7922347C209681810083357D /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 7922347A209681810083357D /* arrows.png */; };
+		7922347E209724840083357D /* soundIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7922347D209724840083357D /* soundIcon.png */; };
+		792234802097283C0083357D /* soundOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 7922347F2097283C0083357D /* soundOff.png */; };
+		792234B7209E36E40083357D /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 792234B5209E36E40083357D /* Map.cpp */; };
+		792234BA209E3A530083357D /* Ghosts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 792234B8209E3A530083357D /* Ghosts.cpp */; settings = {COMPILER_FLAGS = "-O0"; }; };
+		792234C220A236AE0083357D /* ghostsSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 792234C120A236AE0083357D /* ghostsSheet.png */; };
+		792234CA20A246020083357D /* ninjaPacman.png in Resources */ = {isa = PBXBuildFile; fileRef = 792234C920A246020083357D /* ninjaPacman.png */; };
+		792234CD20A248CF0083357D /* Pacman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 792234CB20A248CF0083357D /* Pacman.cpp */; };
+		792234F920A26A9B0083357D /* Level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 792234F820A26A9B0083357D /* Level1.txt */; };
+		792234FB20A26B2E0083357D /* tileTexture2.png in Resources */ = {isa = PBXBuildFile; fileRef = 792234FA20A26B2E0083357D /* tileTexture2.png */; };
+		792234FD20A5F4420083357D /* Level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 792234FC20A5F4420083357D /* Level3.txt */; };
+		792234FF20A5F4500083357D /* Level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 792234FE20A5F4500083357D /* Level2.txt */; };
+		7922350220A600180083357D /* Pickups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7922350020A600180083357D /* Pickups.cpp */; };
+		7922350820A62AE70083357D /* smallDots.png in Resources */ = {isa = PBXBuildFile; fileRef = 7922350720A62AE70083357D /* smallDots.png */; };
+		7922350A20A62B5C0083357D /* smallDots.png in Resources */ = {isa = PBXBuildFile; fileRef = 7922350920A62B5C0083357D /* smallDots.png */; };
+		79D5F76920855821002E77F1 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F76820855821002E77F1 /* ResourcePath.mm */; };
+		79D5F76C20855821002E77F1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F76B20855821002E77F1 /* main.cpp */; };
+		79D5F796208F372E002E77F1 /* MenuClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79D5F794208F372E002E77F1 /* MenuClass.cpp */; };
+		79FBAA3320A72CCC00A1A0D9 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79FBAA3120A72CCC00A1A0D9 /* Score.cpp */; };
+		79FBAA3520A757F700A1A0D9 /* scores.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79FBAA3420A757F700A1A0D9 /* scores.txt */; };
+		79FBAA3820A760CD00A1A0D9 /* Audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79FBAA3620A760CD00A1A0D9 /* Audio.cpp */; };
+		79FBAA3E20A7B66A00A1A0D9 /* life.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FBAA3D20A7B66A00A1A0D9 /* life.png */; };
+		79FBAA4120A7CDA600A1A0D9 /* Screens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79FBAA3F20A7CDA600A1A0D9 /* Screens.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79223465208F3BE50083357D /* zeroVelocity.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zeroVelocity.ttf; sourceTree = "<group>"; };
+		792234672090FA430083357D /* titleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titleImage.jpg; sourceTree = "<group>"; };
+		7922346B209125920083357D /* MenuPacman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuPacman.cpp; path = PacmanGame/MenuPacman.cpp; sourceTree = "<group>"; };
+		7922346C209125920083357D /* MenuPacman.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MenuPacman.hpp; path = PacmanGame/MenuPacman.hpp; sourceTree = "<group>"; };
+		7922346E20912B150083357D /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Animation.cpp; path = PacmanGame/Animation.cpp; sourceTree = "<group>"; };
+		7922346F20912B150083357D /* Animation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Animation.hpp; path = PacmanGame/Animation.hpp; sourceTree = "<group>"; };
+		792234772092120B0083357D /* pac3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pac3.png; sourceTree = "<group>"; };
+		79223479209681810083357D /* wasd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wasd.png; path = ../../../../Downloads/wasd.png; sourceTree = "<group>"; };
+		7922347A209681810083357D /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrows.png; path = ../../../../Downloads/arrows.png; sourceTree = "<group>"; };
+		7922347D209724840083357D /* soundIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soundIcon.png; path = ../../../../Downloads/soundIcon.png; sourceTree = "<group>"; };
+		7922347F2097283C0083357D /* soundOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soundOff.png; path = ../../../../Downloads/soundOff.png; sourceTree = "<group>"; };
+		792234B5209E36E40083357D /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Map.cpp; path = PacmanGame/Map.cpp; sourceTree = "<group>"; };
+		792234B6209E36E40083357D /* Map.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Map.hpp; path = PacmanGame/Map.hpp; sourceTree = "<group>"; };
+		792234B8209E3A530083357D /* Ghosts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ghosts.cpp; path = PacmanGame/Ghosts.cpp; sourceTree = "<group>"; };
+		792234B9209E3A530083357D /* Ghosts.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Ghosts.hpp; path = PacmanGame/Ghosts.hpp; sourceTree = "<group>"; };
+		792234C120A236AE0083357D /* ghostsSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ghostsSheet.png; path = ../../../../Downloads/ghostsSheet.png; sourceTree = "<group>"; };
+		792234C920A246020083357D /* ninjaPacman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ninjaPacman.png; path = ../../../../Downloads/ninjaPacman.png; sourceTree = "<group>"; };
+		792234CB20A248CF0083357D /* Pacman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pacman.cpp; path = PacmanGame/Pacman.cpp; sourceTree = "<group>"; };
+		792234CC20A248CF0083357D /* Pacman.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Pacman.hpp; path = PacmanGame/Pacman.hpp; sourceTree = "<group>"; };
+		792234F820A26A9B0083357D /* Level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level1.txt; sourceTree = "<group>"; };
+		792234FA20A26B2E0083357D /* tileTexture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileTexture2.png; path = ../../../../Downloads/tileTexture2.png; sourceTree = "<group>"; };
+		792234FC20A5F4420083357D /* Level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level3.txt; sourceTree = "<group>"; };
+		792234FE20A5F4500083357D /* Level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level2.txt; sourceTree = "<group>"; };
+		7922350020A600180083357D /* Pickups.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pickups.cpp; path = PacmanGame/Pickups.cpp; sourceTree = "<group>"; };
+		7922350120A600180083357D /* Pickups.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Pickups.hpp; path = PacmanGame/Pickups.hpp; sourceTree = "<group>"; };
+		7922350720A62AE70083357D /* smallDots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallDots.png; path = ../../../../Downloads/smallDots.png; sourceTree = "<group>"; };
+		7922350920A62B5C0083357D /* smallDots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallDots.png; path = ../../../../Downloads/smallDots.png; sourceTree = "<group>"; };
+		79D5F76320855821002E77F1 /* PacmanGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacmanGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D5F76720855821002E77F1 /* PacmanGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PacmanGame-Info.plist"; sourceTree = "<group>"; };
+		79D5F76820855821002E77F1 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		79D5F76A20855821002E77F1 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		79D5F76B20855821002E77F1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		79D5F794208F372E002E77F1 /* MenuClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuClass.cpp; path = PacmanGame/MenuClass.cpp; sourceTree = "<group>"; };
+		79D5F795208F372E002E77F1 /* MenuClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MenuClass.hpp; path = PacmanGame/MenuClass.hpp; sourceTree = "<group>"; };
+		79FBAA3120A72CCC00A1A0D9 /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = PacmanGame/Score.cpp; sourceTree = "<group>"; };
+		79FBAA3220A72CCC00A1A0D9 /* Score.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Score.hpp; path = PacmanGame/Score.hpp; sourceTree = "<group>"; };
+		79FBAA3420A757F700A1A0D9 /* scores.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = scores.txt; path = PacmanGame/scores.txt; sourceTree = "<group>"; };
+		79FBAA3620A760CD00A1A0D9 /* Audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Audio.cpp; path = PacmanGame/Audio.cpp; sourceTree = "<group>"; };
+		79FBAA3720A760CD00A1A0D9 /* Audio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Audio.hpp; path = PacmanGame/Audio.hpp; sourceTree = "<group>"; };
+		79FBAA3D20A7B66A00A1A0D9 /* life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = life.png; path = ../../../../Downloads/life.png; sourceTree = "<group>"; };
+		79FBAA3F20A7CDA600A1A0D9 /* Screens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Screens.cpp; path = PacmanGame/Screens.cpp; sourceTree = "<group>"; };
+		79FBAA4020A7CDA600A1A0D9 /* Screens.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Screens.hpp; path = PacmanGame/Screens.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79D5F75F20855821002E77F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79D5F75920855821002E77F1 = {
+			isa = PBXGroup;
+			children = (
+				79FBAA3F20A7CDA600A1A0D9 /* Screens.cpp */,
+				79FBAA4020A7CDA600A1A0D9 /* Screens.hpp */,
+				79FBAA3420A757F700A1A0D9 /* scores.txt */,
+				79FBAA3620A760CD00A1A0D9 /* Audio.cpp */,
+				79FBAA3720A760CD00A1A0D9 /* Audio.hpp */,
+				79FBAA3120A72CCC00A1A0D9 /* Score.cpp */,
+				79FBAA3220A72CCC00A1A0D9 /* Score.hpp */,
+				7922350020A600180083357D /* Pickups.cpp */,
+				7922350120A600180083357D /* Pickups.hpp */,
+				792234FE20A5F4500083357D /* Level2.txt */,
+				792234FC20A5F4420083357D /* Level3.txt */,
+				792234F820A26A9B0083357D /* Level1.txt */,
+				792234CB20A248CF0083357D /* Pacman.cpp */,
+				792234CC20A248CF0083357D /* Pacman.hpp */,
+				792234B8209E3A530083357D /* Ghosts.cpp */,
+				792234B9209E3A530083357D /* Ghosts.hpp */,
+				792234B5209E36E40083357D /* Map.cpp */,
+				792234B6209E36E40083357D /* Map.hpp */,
+				7922346E20912B150083357D /* Animation.cpp */,
+				7922346F20912B150083357D /* Animation.hpp */,
+				7922346B209125920083357D /* MenuPacman.cpp */,
+				7922346C209125920083357D /* MenuPacman.hpp */,
+				79D5F794208F372E002E77F1 /* MenuClass.cpp */,
+				79D5F795208F372E002E77F1 /* MenuClass.hpp */,
+				79D5F76520855821002E77F1 /* PacmanGame */,
+				79D5F76420855821002E77F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79D5F76420855821002E77F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79D5F76320855821002E77F1 /* PacmanGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79D5F76520855821002E77F1 /* PacmanGame */ = {
+			isa = PBXGroup;
+			children = (
+				79D5F76820855821002E77F1 /* ResourcePath.mm */,
+				79D5F76A20855821002E77F1 /* ResourcePath.hpp */,
+				79D5F76B20855821002E77F1 /* main.cpp */,
+				79D5F76D20855821002E77F1 /* Resources */,
+				79D5F76620855821002E77F1 /* Supporting Files */,
+			);
+			path = PacmanGame;
+			sourceTree = "<group>";
+		};
+		79D5F76620855821002E77F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79D5F76720855821002E77F1 /* PacmanGame-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79D5F76D20855821002E77F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7922347F2097283C0083357D /* soundOff.png */,
+				792234C920A246020083357D /* ninjaPacman.png */,
+				79FBAA3D20A7B66A00A1A0D9 /* life.png */,
+				7922350720A62AE70083357D /* smallDots.png */,
+				7922350920A62B5C0083357D /* smallDots.png */,
+				792234C120A236AE0083357D /* ghostsSheet.png */,
+				792234FA20A26B2E0083357D /* tileTexture2.png */,
+				7922347D209724840083357D /* soundIcon.png */,
+				79223479209681810083357D /* wasd.png */,
+				7922347A209681810083357D /* arrows.png */,
+				792234672090FA430083357D /* titleImage.jpg */,
+				792234772092120B0083357D /* pac3.png */,
+				79223465208F3BE50083357D /* zeroVelocity.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79D5F76220855821002E77F1 /* PacmanGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D5F77820855821002E77F1 /* Build configuration list for PBXNativeTarget "PacmanGame" */;
+			buildPhases = (
+				79D5F75E20855821002E77F1 /* Sources */,
+				79D5F75F20855821002E77F1 /* Frameworks */,
+				79D5F76020855821002E77F1 /* Resources */,
+				79D5F76120855821002E77F1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacmanGame;
+			productName = PacmanGame;
+			productReference = 79D5F76320855821002E77F1 /* PacmanGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79D5F75A20855821002E77F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mohamed Nagaty";
+				TargetAttributes = {
+					79D5F76220855821002E77F1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 79D5F75D20855821002E77F1 /* Build configuration list for PBXProject "PacmanGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79D5F75920855821002E77F1;
+			productRefGroup = 79D5F76420855821002E77F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79D5F76220855821002E77F1 /* PacmanGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79D5F76020855821002E77F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792234682090FA430083357D /* titleImage.jpg in Resources */,
+				7922350820A62AE70083357D /* smallDots.png in Resources */,
+				792234CA20A246020083357D /* ninjaPacman.png in Resources */,
+				792234802097283C0083357D /* soundOff.png in Resources */,
+				7922347E209724840083357D /* soundIcon.png in Resources */,
+				792234C220A236AE0083357D /* ghostsSheet.png in Resources */,
+				7922347B209681810083357D /* wasd.png in Resources */,
+				79FBAA3520A757F700A1A0D9 /* scores.txt in Resources */,
+				7922347C209681810083357D /* arrows.png in Resources */,
+				792234782092120B0083357D /* pac3.png in Resources */,
+				792234FB20A26B2E0083357D /* tileTexture2.png in Resources */,
+				79223466208F3BE50083357D /* zeroVelocity.ttf in Resources */,
+				792234FF20A5F4500083357D /* Level2.txt in Resources */,
+				79FBAA3E20A7B66A00A1A0D9 /* life.png in Resources */,
+				7922350A20A62B5C0083357D /* smallDots.png in Resources */,
+				792234F920A26A9B0083357D /* Level1.txt in Resources */,
+				792234FD20A5F4420083357D /* Level3.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79D5F76120855821002E77F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79D5F75E20855821002E77F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792234B7209E36E40083357D /* Map.cpp in Sources */,
+				7922346D209125920083357D /* MenuPacman.cpp in Sources */,
+				79FBAA3820A760CD00A1A0D9 /* Audio.cpp in Sources */,
+				79D5F76C20855821002E77F1 /* main.cpp in Sources */,
+				7922350220A600180083357D /* Pickups.cpp in Sources */,
+				792234CD20A248CF0083357D /* Pacman.cpp in Sources */,
+				79D5F76920855821002E77F1 /* ResourcePath.mm in Sources */,
+				79FBAA4120A7CDA600A1A0D9 /* Screens.cpp in Sources */,
+				79D5F796208F372E002E77F1 /* MenuClass.cpp in Sources */,
+				7922347020912B150083357D /* Animation.cpp in Sources */,
+				79FBAA3320A72CCC00A1A0D9 /* Score.cpp in Sources */,
+				792234BA209E3A530083357D /* Ghosts.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		79D5F77620855821002E77F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		79D5F77720855821002E77F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		79D5F77920855821002E77F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PacmanGame/PacmanGame-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		79D5F77A20855821002E77F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PacmanGame/PacmanGame-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79D5F75D20855821002E77F1 /* Build configuration list for PBXProject "PacmanGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D5F77620855821002E77F1 /* Debug */,
+				79D5F77720855821002E77F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D5F77820855821002E77F1 /* Build configuration list for PBXNativeTarget "PacmanGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D5F77920855821002E77F1 /* Debug */,
+				79D5F77A20855821002E77F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79D5F75A20855821002E77F1 /* Project object */;
+}
